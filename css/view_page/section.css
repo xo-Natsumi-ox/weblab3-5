@@ -1,0 +1,30 @@
+.manage_films h3 {
+    width: 300px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.manage_films {
+    margin-left: 40px;
+}
+
+.sort {
+    font-size: 20px;
+}
+
+select {
+    border-color: darkblue;
+    background-color: #76e0b0;
+    color: darkblue;
+    width: 100px;
+    height: 25px;
+    font-size: 17px;
+}
+
+.line {
+    position: absolute;
+    height: 100%;
+    left: 400px;
+    top: 69px;
+    border-left: 1px solid #76e0b0;
+}
