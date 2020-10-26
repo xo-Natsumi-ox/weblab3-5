@@ -6,6 +6,7 @@
 
 .manage_films {
     margin-left: 40px;
+    display: flex;
 }
 
 .sort {
@@ -16,7 +17,7 @@ select {
     border-color: darkblue;
     background-color: #76e0b0;
     color: darkblue;
-    width: 100px;
+    width: 180px;
     height: 25px;
     font-size: 17px;
 }
@@ -27,4 +28,49 @@ select {
     left: 400px;
     top: 69px;
     border-left: 1px solid #76e0b0;
+}
+
+.film_list {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: teal;
+    border: teal;
+}
+
+.movie {
+    /*    display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+    margin-left: 30px;
+}
+
+.movie li {
+    border: darkblue 2px solid;
+    background-color: #76e0b0;
+    margin-left: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 10%;
+}
+
+.movie h3 {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.movie h1 {
+    font-size: 20px;
+}
+
+.edit_button a {
+    color: white;
+}
+
+img {
+    padding-top: 10px;
+    width: 250px;
+    height: 180px;
 }

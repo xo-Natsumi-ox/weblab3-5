@@ -21,6 +21,9 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+header a {
     color: darkblue;
     margin-right: 70px;
     font-size: 25px;
