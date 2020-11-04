@@ -1,0 +1,48 @@
+header {
+    background-color: #76e0b0;
+    margin: -10px;
+    padding-top: 10px;
+}
+
+.my_films {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    color: darkblue;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: darkblue;
+    margin-right: 70px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+a:hover {
+    color: blue;
+}
+
+.input {
+    border-color: darkblue;
+    margin-right: 30px;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    background-color: #76e0b0;
+}
+
+.clear {
+    margin-right: 50px;
+}
