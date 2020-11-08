@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/view_page/global.css">
+    <link rel="stylesheet" href="css/view_page/header.css">
+    <link rel="stylesheet" href="css/view_page/section.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="my_films">
+            <nav>
+                <ul>
+                    <li><a href="">My films</a></li>
+                    <li><a href="view_page.html">My movies</a></li>
+                    <li><a href="create_page.html">Create movie</a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <input id="input" class="input" placeholder="What movie do yo want to find?" type="text">
+                <button id="clear" class="clear">Clear</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="manage_films">
+        <div class="left">
+
+
+            <div class="manage">
+                <h3>Manage films</h3>
+                <div class="sort">
+                    <h5>Sort by rate</h5>
+                    <label for="sort-select">Sort by</label>
+                    <select name="sorting" id="sorting" onchange="sortedFilm()">
+                        <option value="none">none</option>
+                        <option value="rate">the most popular film</option>
+                        <option value="short">the shortest</option>
+                        <option value="long">the longest film</option>
+                        </select>
+                    <!--<button class="cancel-button">Cancel</button>-->
+
+                </div>
+                <div class="count">
+                    <h5>Count total duration in minutes:</h5>
+                    <button id="count" onclick="countDuration()">Count</button>
+                    <h5 id="total_duration">Total duration:</h5>
+                </div>
+            </div>
+        </div>
+        <div class="movie">
+            <ul id="film_list" class="film_list"></ul>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
