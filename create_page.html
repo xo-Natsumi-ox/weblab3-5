@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/view_page/global.css">
+    <link rel="stylesheet" href="css/createdit_page/createdit.css">
+    <link rel="stylesheet" href="css/createdit_page/modal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+
+    <div id="add">
+        <h1>Add movie</h1><br>
+        <form action="javascript:void(0);">
+            <div class="add_inputs">
+                <div class="name_input">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name_input" placeholder="Enter name">
+                </div>
+                <div class="rate_input">
+                    <label for="rate">Rate on IMDb</label>
+                    <input class="form-control" type="number" id="rate_input" placeholder="Enter rate">
+                </div>
+                <div class="duration_input">
+                    <label for="duration">Duration of movie</label>
+                    <input class="form-control" type="number" id="duration_input" placeholder="Enter duration">
+                </div>
+            </div>
+            <div class="buttons_add">
+                <div>
+                    <input id="submit" type="submit" class="submit" value="Submit">
+                </div>
+
+                <button id="bummer" class="bummer">modal</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>:)</p>
+                    </div>
+                </div>
+                <button class="return"><a href="view_page.html">return</a></button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/modal.js"></script>
+
+</body>
+
+</html>
