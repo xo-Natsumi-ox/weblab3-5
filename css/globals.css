@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+body.lock__body {
+    overflow: hidden;
+}
+
+.body_site {
+    padding-top: 70px;
+    display: flex;
+}
+
+.hiden {
+    display: none;
+}

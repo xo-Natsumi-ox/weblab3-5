@@ -1,0 +1,24 @@
+.add_title {
+    margin: auto;
+    font-size: 40px;
+}
+
+.add_item {
+    margin-bottom: 20px;
+}
+
+.add_input {
+    font-size: 30px;
+}
+
+.submit_add {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #027e17;
+    background-color: #5edf52;
+    color: #027e17;
+    border-radius: 20%;
+    font-size: 16px;
+}

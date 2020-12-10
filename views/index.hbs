@@ -1,0 +1,87 @@
+<div class="body_site">
+        <div class="left_manage">
+            <div class="left_content">
+                <div class="left_sort">
+                    <h2 class="left_title manage_film">Manage films</h2>
+                    <div class="sort">
+                        <label for="sort_by">Sort By</label>
+                        <select id="sort_by" onchange="sortedFilm()">
+                            <option value="none">none</option>
+                            <option value="name">name</option>
+                            <option value="rateIMDb">rate</option>
+                            <option value="duration">duration</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="left_count">
+                    <h3 class="left_title">Count total duration:</h3>
+                    <div class="count">
+                        <button class="count_button" onclick="countTotalDuration()">Count</button>
+                    </div>
+                    <h4 id="total_duration" class="left_title">Total duration:</h4>
+                </div>
+            </div>
+            <div class="vl"><span></span></div>
+        </div>
+        <div class="movies">
+            <ul id="film_list" class="film_list">
+                
+
+            </ul>
+        </div>
+    </div>            
+    
+
+
+    <div id="modal_add" class="modal">
+        <div class="modal_window">
+            <div class="modal_content">
+                <a href="#header" class="modal_close close_modal">x</a>
+                <h2 class="add_title">Add film</h2>
+                <div class="add__container">
+                    <div class="add_item">
+                        <h1 class="add_input">Name</h1>
+                        <input id="add_name" class="input" type="text" placeholder="Enter name">
+                    </div>
+                    <div class="add_item">
+                        <h1 class="add_input">Rate</h1>
+                        <input id="add_rate" class="input" type="number" placeholder="Enter rate">
+                    </div>
+                    <div class="add_item">
+                        <h1 class="add_input">Duration</h1>
+                        <input id="add_duration" class="input" type="number" placeholder="Enter duration">
+                    </div>
+                <input id="submit_add" class="submit_add" type="button" value="Submit"/>
+            </div>
+        </div>    
+    </div>
+    </div>
+
+
+    <div id="modal_edit" class="modal">
+        <div class="modal_window">
+            <div class="modal_content">
+                <a href="#header" class="modal_close close_modal">x</a>
+                <h2 class="edit_title">Edit film</h2>
+                <div class="edit__container">
+                    <div class="edit_item">
+                        <h1 class="edit_input">Name</h1>
+                        <input id="edit_name" class="input" type="text" placeholder="Enter name">
+                    </div>
+                    <div class="edit_item">
+                        <h1 class="edit_input">Rate</h1>
+                        <input id="edit_rate" class="input" type="number" placeholder="Enter rate">
+                    </div>
+                    <div class="edit_item">
+                        <h1 class="edit_input">Duration</h1>
+                        <input id="edit_duration" class="input" type="number" placeholder="Enter duration">
+                    </div>
+                </div>
+                <input id="submit_edit" class="submit_edit" type="button" value="Submit"/>
+            </div>
+        </div>    
+    </div>
+
+    <script>let filmJson = '{{ filmJson }}'; </script>
+    <script src="../js/main.js"></script>
