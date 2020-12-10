@@ -1,0 +1,65 @@
+.left_manage {
+    position: relative;
+    top: 0px;
+    margin-top: 40px;
+    width: 30%;
+    display: flex;
+}
+
+.left_content {
+    width: 100%;
+}
+
+.left_title {
+    text-align: center;
+}
+
+.manage_film {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.vl {
+    position: relative;
+    top: -50px;
+    width: 1px;
+    height: 200%;
+    background: #000000;
+    margin-left: 20px;
+}
+
+.sort {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+label {
+    color: #464646;
+    margin-right: 10px;
+}
+
+hr {
+    position: relative;
+    left: -95%;
+    width: 200%;
+    margin: 15px 0;
+}
+
+.count {
+    text-align: center;
+}
+
+.count_button {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 8px 0;
+    border: 2px solid #027e17;
+    background-color: #5edf52;
+    color: #027e17;
+    border-radius: 20%;
+    font-size: 16px;
+}
